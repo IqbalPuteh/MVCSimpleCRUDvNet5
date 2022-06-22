@@ -1,0 +1,42 @@
+﻿@model IEnumerable<waDVTechTest.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Data List</h3>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nama)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nama)
+            </td>
+
+            <td>
+                
+                <a asp-action="Edit" asp-route-id="@item.NomerId">Edit Data</a> |
+                <a asp-action="Details" asp-route-id="@item.NomerId">View Data</a> |
+                <a asp-action="Delete" asp-route-id="@item.NomerId">Delete Data</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<a asp-action="Create">Create New Data</a>
