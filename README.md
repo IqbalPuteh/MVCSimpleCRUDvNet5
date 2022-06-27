@@ -12,8 +12,8 @@ Nama Databasenya adalah [waDVTechTest]
 DML/Data manipulation language serta 'sample' data tidak disertakan.
 Untuk membuat data data struktur database tersebu dapat menjalankan DML berikut ini:
 
-USE [USE [waDVTechTest]
-GO
+USE [USE [waDVTechTest];
+GO;
 
 CREATE TABLE [dbo].[Student] (
     [NomerId] NCHAR (10) NOT NULL,
