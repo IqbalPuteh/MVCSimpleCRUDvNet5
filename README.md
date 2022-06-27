@@ -9,8 +9,8 @@ Database mengunakan MS-SQL server 2015
 
 Nama Databasenya adalah [waDVTechTest]
 
-DML/Data manipulation language serta 'sample' data tidak disertakan.
-Untuk membuat data data struktur database tersebu dapat menjalankan DML berikut ini:
+Database sample dapat di download dari folder database atau menjalankan DML dibawah ini
+DML/Data manipulation language Untuk membuat data data struktur database tersebut adalah sbb:
 
 USE [USE [waDVTechTest];
 GO;
